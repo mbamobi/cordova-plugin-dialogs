@@ -168,7 +168,9 @@ public class Notification extends CordovaPlugin {
                 AlertDialog.Builder dlg = createDialog(cordova); // new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
                 dlg.setMessage(message);
                 dlg.setTitle(title);
-                dlg.setCancelable(true);
+                //dlg.setCancelable(true);
+                dlg.setCanceledOnTouchOutside(false);
+                dlg.setCancelable(false);
                 dlg.setPositiveButton(buttonLabel,
                         new AlertDialog.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
@@ -208,8 +210,9 @@ public class Notification extends CordovaPlugin {
                 AlertDialog.Builder dlg = createDialog(cordova); // new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
                 dlg.setMessage(message);
                 dlg.setTitle(title);
-                dlg.setCancelable(true);
-
+                //dlg.setCancelable(true);
+                dlg.setCanceledOnTouchOutside(false);
+                dlg.setCancelable(false);
                 // First button
                 if (buttonLabels.length() > 0) {
                     try {
@@ -298,8 +301,9 @@ public class Notification extends CordovaPlugin {
                 AlertDialog.Builder dlg = createDialog(cordova); // new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
                 dlg.setMessage(message);
                 dlg.setTitle(title);
-                dlg.setCancelable(true);
-                
+                //dlg.setCancelable(true);
+                dlg.setCanceledOnTouchOutside(false);
+                dlg.setCancelable(false);
                 dlg.setView(promptInput);
                 
                 final JSONObject result = new JSONObject();
