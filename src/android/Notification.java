@@ -169,7 +169,6 @@ public class Notification extends CordovaPlugin {
                 dlg.setMessage(message);
                 dlg.setTitle(title);
                 //dlg.setCancelable(true);
-                dlg.setCanceledOnTouchOutside(false);
                 dlg.setCancelable(false);
                 dlg.setPositiveButton(buttonLabel,
                         new AlertDialog.OnClickListener() {
@@ -211,7 +210,6 @@ public class Notification extends CordovaPlugin {
                 dlg.setMessage(message);
                 dlg.setTitle(title);
                 //dlg.setCancelable(true);
-                dlg.setCanceledOnTouchOutside(false);
                 dlg.setCancelable(false);
                 // First button
                 if (buttonLabels.length() > 0) {
@@ -302,7 +300,6 @@ public class Notification extends CordovaPlugin {
                 dlg.setMessage(message);
                 dlg.setTitle(title);
                 //dlg.setCancelable(true);
-                dlg.setCanceledOnTouchOutside(false);
                 dlg.setCancelable(false);
                 dlg.setView(promptInput);
                 
